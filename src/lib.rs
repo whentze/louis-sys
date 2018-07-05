@@ -5,6 +5,9 @@ include!(concat!(env!("OUT_DIR"), "/bindings.rs"));
 
 #[cfg(test)]
 extern crate semver_parser;
+#[cfg(test)]
+#[macro_use]
+extern crate lazy_static;
 
 #[cfg(test)]
 mod tests;
