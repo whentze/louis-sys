@@ -1,0 +1,12 @@
+[package]
+name = "louis-sys"
+version = "0.1.0"
+authors = ["muvlon <muvlon@hentzes.de>"]
+
+[dependencies]
+
+[build-dependencies]
+bindgen = "0.37.4"
+
+[dev-dependencies]
+semver-parser = "0.9.0"
