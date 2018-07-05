@@ -1,6 +1,6 @@
 [package]
 name = "louis-sys"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["muvlon <muvlon@hentzes.de>"]
 description = "Bindings to liblouis (low-level crate)"
 repository = "https://github.com/whentze/louis-sys"
