@@ -6,6 +6,7 @@ description = "Bindings to liblouis (low-level crate)"
 repository = "https://github.com/whentze/louis-sys"
 license = "LGPL-3.0"
 categories = ["external-ffi-bindings", "text-processing", "localization", "encoding"]
+readme = "README.md"
 
 [dependencies]
 
