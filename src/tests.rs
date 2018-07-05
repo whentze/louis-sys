@@ -72,7 +72,7 @@ fn liblouis_roundtrip() {
     };
     assert_eq!(res, 1);
 
-    let inbuf = unsafe { Vec::from_raw_parts(outbuf.as_mut_ptr(), outlen as usize, 50)};
+    let inbuf = unsafe { Vec::from_raw_parts(outbuf.as_mut_ptr(), outlen as usize, 50) };
     std::mem::forget(outbuf);
     let mut inlen = outlen;
 
@@ -93,7 +93,7 @@ fn liblouis_roundtrip() {
     };
     assert_eq!(res, 1);
 
-    let finalbuf = unsafe { Vec::from_raw_parts(outbuf.as_mut_ptr(), outlen as usize, 50)};
+    let finalbuf = unsafe { Vec::from_raw_parts(outbuf.as_mut_ptr(), outlen as usize, 50) };
     std::mem::forget(outbuf);
 
     let new_sentence = String::from_utf8(finalbuf.iter().map(|w| *w as u8).collect()).unwrap();
