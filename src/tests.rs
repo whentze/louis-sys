@@ -1,10 +1,14 @@
 use super::*;
 use lazy_static::lazy_static;
 use semver_parser::version;
-use std::ffi::{CStr, CString};
-use std::path::Path;
-use std::sync::atomic::{AtomicUsize, Ordering};
-use std::sync::Mutex;
+use std::{
+    ffi::{CStr, CString},
+    path::Path,
+    sync::{
+        atomic::{AtomicUsize, Ordering},
+        Mutex,
+    },
+};
 
 // As liblouis is thread-unsafe, we need to restrict access to it to a single thread
 // I'm using a Mutex and a convenience macro
