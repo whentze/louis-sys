@@ -1,4 +1,5 @@
 use super::*;
+use lazy_static::lazy_static;
 use semver_parser::version;
 use std::ffi::{CStr, CString};
 use std::path::Path;
