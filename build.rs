@@ -9,7 +9,12 @@ fn main() {
     let bindings = bindgen::Builder::default()
         .header("wrapper.h")
         .generate()
-        .expect("Unable to generate bindings");
+        .unwrap_or_else(|_| {
+            bindgen::Builder::default()
+                .header("fallback.h")
+                .generate()
+                .expect("Error generating Bindings")
+        });
 
     let out_path = PathBuf::from(env::var("OUT_DIR").unwrap());
     bindings
