@@ -1,6 +1,6 @@
 [package]
 name = "louis-sys"
-version = "0.3.2"
+version = "0.4.0"
 authors = ["muvlon <muvlon@hentzes.de>"]
 links = "louis"
 description = "Bindings to liblouis (low-level crate)"
@@ -8,7 +8,6 @@ repository = "https://github.com/whentze/louis-sys"
 license = "LGPL-3.0"
 categories = ["external-ffi-bindings", "text-processing", "localization", "encoding"]
 readme = "README.md"
-edition = "2018"
 
 [dependencies]
 
