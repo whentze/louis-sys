@@ -1,3 +1,5 @@
+# **MOVED** : This repo is no longer updated, since louis-sys now resides in the [liblouis-rust repo](https://github.com/whentze/liblouis-rust/tree/master/louis-sys)
+
 # louis-sys
 Rust bindings to liblouis (low-level crate)
 
